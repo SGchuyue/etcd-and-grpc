@@ -1,0 +1,16 @@
+syntax = "proto3"; // 版本声明，使用Protocol Buffers v3版本
+package test; // 包名
+// 创建一个send服务
+service SendService {
+  rpc Sendtest (TestRequest) returns (TestResponse) {
+  }
+}
+// 请求消息
+message TestRequest {
+  string Send = 1;
+  string Text = 2;
+}
+// 响应消息
+message TestResponse {
+  bool Ok = 1;
+}
