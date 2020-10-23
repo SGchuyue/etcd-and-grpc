@@ -97,5 +97,3 @@ func (r *Resolver) watch(prefix string) {
 		update()
 	}
 }
-
-

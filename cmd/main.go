@@ -10,7 +10,7 @@ import (
 	s "watch_etcd/server"
 )
 
-type service struct {}
+type service struct{}
 
 func (s *service) SendTest(ctx context.Context, req *pb.TestRequest) (res *pb.TestResponse, err error) {
 	fmt.Printf("邮箱:%s;发送内容:%s", req.Send, req.Text)
@@ -26,8 +26,8 @@ func main() {
 		fmt.Printf("failed to listen: %v", err)
 		return
 	}
-	gs := grpc.NewServer()                       // 创建gRPC服务器
-//	pb.Register(gs, &service{}) // 在gRPC服务端注册服务
+	gs := grpc.NewServer() // 创建gRPC服务器
+	//	pb.Register(gs, &service{}) // 在gRPC服务端注册服务
 	reflection.Register(gs) //在给定的gRPC服务器上注册服务器反射服务
 	// Serve方法在lis上接受传入连接，为每个连接创建一个ServerTransport和server的goroutine。
 	// 该goroutine读取gRPC请求，然后调用已注册的处理程序来响应它们。

@@ -230,6 +230,7 @@ func file_send_proto_init() {
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ context.Context
+
 //var _ grpc.ClientConnInterface{}
 
 // This is a compile-time assertion to ensure that this generated file
@@ -242,7 +243,6 @@ var _ context.Context
 type SendServiceClient interface {
 	Sendtest(ctx context.Context, in *TestRequest, opts ...grpc.CallOption) (*TestResponse, error)
 }
-
 
 /*func NewSendServiceClient(cc grpc.ClientConnInterface) SendServiceClient {
 	return &sendServiceClient{cc}
