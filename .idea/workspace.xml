@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7faaa64d-1dd4-4b9b-8110-7fd3d19f0c5f" name="默认的" comment="" />
+    <list default="true" id="7faaa64d-1dd4-4b9b-8110-7fd3d19f0c5f" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/run.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/run.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +19,11 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jEXlu6XPzScpnMtRQTyTud1jS3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,18 +100,18 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="755" y="390" width="400" height="334" key="#Go_模块/0.27.1920.1053@0.27.1920.1053" timestamp="1603370453563" />
-    <state x="753" y="346" width="403" height="421" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603461060146">
+    <state x="753" y="346" width="403" height="421" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603481127389">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="753" y="346" width="403" height="421" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1603461060146" />
+    <state x="753" y="346" width="403" height="421" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1603481127389" />
     <state x="707" y="407" width="495" height="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603450752029">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="707" y="407" width="495" height="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1603450752029" />
-    <state x="743" y="294" width="424" height="525" key="FileChooserDialogImpl" timestamp="1603412625571">
+    <state x="743" y="294" width="424" height="525" key="FileChooserDialogImpl" timestamp="1603481047937">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="743" y="294" width="424" height="525" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1603412625571" />
+    <state x="743" y="294" width="424" height="525" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1603481047937" />
     <state width="1866" height="270" key="GridCell.Tab.0.bottom" timestamp="1603425294762">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

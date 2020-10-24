@@ -37,7 +37,8 @@ func main() {
 		IP:   "127.0.0.1:645", // grpc服务节点ip
 	}, []string{"127.0.0.1:2379", "127.0.0.1:2279", "127.0.0.1:3379"}) // etcd的节点ip
 	go reg.Run()
-	go reg.Watch()
+	gk := reg.GetValue()
+	go reg.Watch(gk)
 	if err := gs.Serve(lis); err != nil {
 		fmt.Println(err)
 	}

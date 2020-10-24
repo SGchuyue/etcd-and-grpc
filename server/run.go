@@ -63,12 +63,25 @@ func (service *Service) Run() (<-chan *clientv3.LeaseKeepAliveResponse, error) {
 }
 
 // Watch 监听服务
-func (service *Service) Watch() (err error) {
+func (service *Service) Watch(ss interface{}) (err error) {
 	ch, err := service.Run()
 	if err != nil {
 		logger.Error("服务注册时发生错误", err)
 		return
 	}
+	watchCh := service.cli.Watch(context.TODO(), service.getKey())
+	go func() {
+		for res := range watchCh {
+			value := res.Events[0].Kv.Value
+			err := json.Unmarshal(value, ss)
+			if err != nil {
+				logger.Error("now:", time.Now(), "修改值时发生错误:", err)
+				continue
+			}
+			logger.Debug("now", time.Now(), "watchConfig")
+		}
+	}()
+
 	for {
 		select {
 		case err := <-service.end:
@@ -99,6 +112,16 @@ func (service *Service) revoke() error {
 // getKey 获取key的值
 func (service *Service) getKey() string {
 	return service.ServiceInfo.Name + "/" + service.ServiceInfo.IP + "/" + service.ServiceInfo.Type
+}
+
+// GetValue 获取键对应值
+func (service *Service) GetValue() interface{} {
+	getvalue, err := service.cli.Get(context.TODO(), service.getKey(), clientv3.WithFromKey())
+	if err != nil {
+		logger.Error("获取键对应值时发生错误：", err)
+		return nil
+	}
+	return getvalue
 }
 
 // End 服务结束
