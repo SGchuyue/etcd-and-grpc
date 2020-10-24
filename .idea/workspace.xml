@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7faaa64d-1dd4-4b9b-8110-7fd3d19f0c5f" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/run.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/run.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +20,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cmd" />
   </component>
   <component name="ProjectId" id="1jEXlu6XPzScpnMtRQTyTud1jS3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
